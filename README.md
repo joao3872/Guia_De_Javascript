@@ -21,3 +21,21 @@
 <br>
 
 ### Array, métodos, length e spreed operator
+
+#### Declaração de Arrays:
+
+* Forma padrão de declarar array:
+
+* `let lista = []`
+
+* Outra forma de declarar uma lista, é pelo método Array():
+
+* `let lista2 = Array()`
+
+#### Declaração de Arrays com Valores:
+
+* `let produtos = ['Arroz', 'Feijão', 'Leite']`
+
+* `var numeros = Array(10, 20, 30)`
+
+* 
