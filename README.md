@@ -16,7 +16,7 @@
 
 * **[Estruturas if else e switch case no Javascript ;](#estruturas-if-else-e-switch-case-no-javascript)**
 
-* **[Estruturas for, forEach, while e do while no Javascript.](#estruturas-for-forEach-while-do-while-no-javascript)**
+* **[Estruturas for, forEach, while e do while no Javascript.](#estruturas-for-forEach-while-e-do-while-no-javascript)**
 
 <br>
 
@@ -419,3 +419,15 @@
 * .classList.remove("nomeDaClass"), remove a class da lista de classes e retira todas as alterações que a class CSS estava aplicando.
 
 ### Funções em Javascript, e Arrow Function
+
+
+
+### Eventos no Javascript
+
+
+
+### Estruturas if else e switch case no Javascript
+
+
+
+### Estruturas for, forEach, while e do while no Javascript
