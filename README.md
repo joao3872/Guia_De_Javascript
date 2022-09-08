@@ -10,7 +10,7 @@
 
 * **[DOM Manipular CSS com Javascript ;](#DOM-manipular-css-com-javascript)**
 
-* **[Funções em Javascript, e um extra, Arrow Function ;](#Funções-em-Javascript-e-um-extra-arrow-function)**
+* **[Funções em Javascript, e um extra, Arrow Function ;](#Funções-em-Javascript-e-um-extra-Arrow-Function)**
 
 * **[Eventos no Javascript ;](#eventos-no-javascript)**
 
