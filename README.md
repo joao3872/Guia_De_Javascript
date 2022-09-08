@@ -218,4 +218,146 @@
 
 <br>
 
-### DOM Manipular HTML com Javascript
+### DOM Manipular HTML com Javascrip
+
+#### Método de Seleção:
+
+* Seleção por Tag
+
+* `document.querSelector('h1')`
+
+* Seleção por Id
+
+* `document.querySelector('#id_da_tag')`
+
+* Seleção por Class
+
+* `document.querSelector('.class_da_tag')`
+
+#### Variáveis do Javascript:
+
+* `var`
+
+* var, serve para declarar uma variável.
+
+* `let`
+
+* let, declara variável e pode ter seu valor editado.
+
+* `const`
+
+* const declara variável, porém, não pode ter seu valor editado.
+
+#### Capturar e armazenar valores em uma variável:
+
+* `let titulo = document.querySelector(".titulo")`
+
+* `var texto = document.querySelector('#texto')`
+
+* `const dataNascimento = document.querySelector('.dataNascimento')`
+
+* `var frase = 'Só sei, que nada sei !'`
+
+* `let ano_nascimento = 1999`
+
+* `const autor = "Fulano de Tal"`
+
+#### Acessar valor / conteúdo de uma tag com a propriedade textContent:
+
+* `let titulo = document.querySelector('.titulo')`
+
+* `titulo.textContent`
+
+#### Atribuir valor / conteúdo de uma tag com textContent:
+
+* `titulo.textContent = "Título Novo..."`
+
+#### Acessar valor de uma tag com innerHTML:
+
+* `titulo.innerHTML`
+
+#### Atribuir valor de uma tag com innerHTML:
+
+* `titulo.innerHTML = 'Título Novo <span>OK</span>'`
+
+#### Seleção de todas as Tags iguais, Class igual e Id igual:
+
+* `const titulo = document.querySelectorAll('h2')`
+
+* `let item = document.querySelectorAll('.item')`
+
+* `var conteudo = document.querySelectorAll('#conteudo')`
+
+* O .querySelectorAll(), armazena os valores / conteúdos de um container, em um Array interno, e separa por índices do Array.
+
+<br>
+
+* HTML para o exemplo abaixo:
+
+`<div class="container">`
+
+      <h3>Título 1</h3>
+      <p>Texto 1</p>
+
+`</div>`
+
+`<div class="container">`
+
+      <h3>Título 2</h3>
+      <p>Texto 2</p>
+
+`</div>`
+
+`<div class="container">`
+
+      <h3>Título 3</h3>
+      <p>Texto 3</p>
+
+`</div>`
+
+#### Acessando e exibindo, os conteúdos do .querySelectorAll(), através do índice:
+
+* `let testando = document.querySelectorAll('.container')`
+
+* `document.write(testando[0].textContent)`
+
+* Resultado:
+
+      Título 1
+      Texto 1
+
+* `document.write(testando[1].textContent)`
+
+* Resultado:
+
+      Título 2
+      Texto 2
+
+* `document.write(testando[2].textContent)`
+
+* Resultado:
+
+      Título 3
+      Texto 3
+
+#### Para atribuir / editar valor dos itens do querySelectorAll():
+
+* `testando[0].textContent = 'Novo Texto.'`
+
+#### Seletores das versões anteriores, que ainda podem ser usadas:
+
+* É recomendável o uso do querySelector() e do querySelectorAll(), porque são as duas seletores mais modernos.
+
+* Seletor apenas para Tag:
+
+* `let testeTag = document.getElementsByTagName('div')`
+
+* Seletor apenas para Id:
+
+* `let testeId = document.getElementById('titulo')`
+
+* Seletor apenas para Class:
+
+* `let testeClass = document.getElementsByClassName('box')`
+
+### DOM Manipular CSS com Javascript
