@@ -10,7 +10,7 @@
 
 * **[DOM Manipular CSS com Javascript ;](#DOM-manipular-css-com-javascript)**
 
-* **[Funções em Javascript, e um extra, Arrow Function ;](#Funções-em-Javascript-e-um-extra-Arrow-Function)**
+* **[Funções em Javascript, e Arrow Function ;](#Funções-em-Javascript-e-Arrow-Function)**
 
 * **[Eventos no Javascript ;](#eventos-no-javascript)**
 
@@ -418,4 +418,4 @@
 
 * .classList.remove("nomeDaClass"), remove a class da lista de classes e retira todas as alterações que a class CSS estava aplicando.
 
-### Funções em Javascript, e uma extra, Arrow Function
+### Funções em Javascript, e Arrow Function
