@@ -135,3 +135,87 @@
 <br>
 
 ### Objetos em Javascript
+
+* Objetos são formados por: propriedade / chave : valor
+
+#### Criar e declarar objetos:
+
+* `let pessoa = {`
+
+        nome   : "Luan",
+        idade  : 20,
+        peso   : 70.5,
+        altura : 1.80,
+        doador : false,
+   `}`
+
+* `let produtos = {`
+    
+        descricao : [],
+        preco     : []
+   `}`
+
+* `const carros {`
+
+        marca  : ['Ford', 'Fiat', 'GM'],
+        modelo : ['Ka', 'Uno', 'Corsa'],
+        ano    : [1999, 2005, 2010]
+   `}`
+
+#### Acessar propriedade usando ( . ):
+
+* `pessoa.nome`
+
+* Resultado: `'Luan'`
+
+* `pessoa.idade`
+
+* Resultado: `20`
+
+* `pessoa.peso`
+
+* Resultado: `70.5`
+
+#### Acessar propriedade com [' ']:
+
+* `pessoa['nome']`
+
+* Resultado: `'Luan'`
+
+* `pessoa['altura']`
+
+* Resultado: `1.80`
+
+#### Usando propriedade de objeto para cálculos, como a fórmula do IMC, por exemplo:
+
+* `let imc = pessoa.peso / (pessoa.altura * pessoa.altura)`
+
+#### Usando o método toFixed(), para limitar as casas decimais:
+
+* `console.log("IMC " + imc.toFixed(2)`
+
+#### Alterar valor de propriedade:
+
+* `pessoa.nome = "João Matheus"`
+
+* `produtos.descricao = ['Arroz']`
+
+* `produtos.preco = [4.99]`
+
+* Usando spreed operator, para não substituir o valor, mas sim, para adicionar uma cópia dos valores anteriores e colocar novos valores:
+
+* `produtos.descricao = [...produtos.descricao, 'Feijão', 'Carne']`
+
+* `produtos.preco = [...produtos.preco, 9.99, 4.79]`
+
+#### Usando spreed operator em objetos declarados com constante ( const ):
+
+* `carros.marca = [...carros.marca, 'VW']`
+
+* `carros.modelo = [...carros.modelo, 'Fusca']`
+
+* `carros.ano = [...carros.ano, 1979]`
+
+<br>
+
+### DOM Manipular HTML com Javascript
