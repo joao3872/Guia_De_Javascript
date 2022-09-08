@@ -388,4 +388,34 @@
 
 #### Usando .setAttribute() para manipular CSS:
 
-* ``
+* `let box = document.querySelectorAll('.box')`
+
+* `box[0].setAttribute('class', 'verde')`
+
+* Com o  setAttribute('class', 'nomeClass'), você pode realizar todas as alterações no item do html, através do css usando a class específica, ao invés de utilizar o DOM para tudo.
+
+#### Remover a class configurada pelo .setAttribute(), usando o removeAttribute():
+
+* `box[0].removeAttribute('class')`
+
+* O problema de usar o removeAttribute(), é que acaba removendo outras classes, além da class que é para remover.
+
+* A solução para este problema, pode ser a classList.add() e classList.remove().
+
+#### Escutador de Eventos, classList.add() e classList.remove():
+
+* .addEventListener(), serve para escutar eventos, caso, esse método identifique o evento especificado em seu parâmetro, será executada uma ação.
+
+* `btnDark.addEventListener('click', modoDark)`
+
+* `function modoDark() {`
+
+      tela.classList.add("dark")
+      tela.classList.remove("light")
+  `}`
+
+* .classList.add("nomeDaClass"), adiciona uma class na lista de classes e aplica todas as alterações que a class CSS possui.
+
+* .classList.remove("nomeDaClass"), remove a class da lista de classes e retira todas as alterações que a class CSS estava aplicando.
+
+### Funções em Javascript, e uma extra: Arrow Function
