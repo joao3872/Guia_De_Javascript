@@ -218,7 +218,7 @@
 
 <br>
 
-### DOM Manipular HTML com Javascrip
+### DOM Manipular HTML com Javascript
 
 #### Método de Seleção:
 
@@ -361,3 +361,31 @@
 * `let testeClass = document.getElementsByClassName('box')`
 
 ### DOM Manipular CSS com Javascript
+
+#### Inserir uma imagem com setAttribute():
+
+* `let imagem = querySelector('#imagem')`
+
+* .setAttribute(), serve para configurar um atributo. Basicamente este método possui dois parâmetros: nome do atributo a ser setado e o valor deste atributo.
+
+* `imagem.setAttribute('src', 'image/img.png')`
+
+* Pode ser usado para adicionar / modificar uma propriedade.
+
+* `imagem.setAttribute('width', '230px')`
+
+#### Manipulando CSS com DOM:
+
+* `titulo.style.color = '#2194ff'`
+
+* `titulo.style.background = '#000'`
+
+* `titulo.style.borderBottom = '5px solid #2194ff'`
+
+* `titulo.style.padding = '.625rem'`
+
+* `titulo.style.borderRadius = '8px'`
+
+#### Usando .setAttribute() para manipular CSS:
+
+* ``
