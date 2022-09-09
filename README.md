@@ -278,7 +278,7 @@
 
 #### Atribuir valor de uma tag com innerHTML:
 
-* `titulo.innerHTML = 'Título Novo <span>OK</span>'`
+* ``titulo.innerHTML = `Título Novo <span>OK</span>` ``
 
 #### Seleção de todas as Tags iguais, Class igual e Id igual:
 
@@ -420,14 +420,112 @@
 
 ### Funções em Javascript, e Arrow Function
 
+#### Função sem parâmetros e sem retorno (procedure), é um procedimento:
 
+* `function olaMundo() {`
+
+      document.write('Olá Mundo sem retorno.')
+  `}`
+
+#### Função sem parâmetros e com retorno (function), é uma função:
+
+* `function olaMundo2() {`
+
+      return 'Olá Mundo com retorno.'
+  `}`
+
+#### Fazer a chamada da função, para executá-la:
+
+* `olaMundo()`
+
+* No caso da função olaMundo2(), é preciso utilizar document.write() para chamar a função, porque o return da mesma, está retornando apenas uma string.
+
+* `document.write(olaMundo2())`
+
+* #### Observação:
+    Caso, dentro da função esteja assim: return document.write('Um texto aqui...'), a função poderá ser chamada assim: olaMundo2()
+
+#### Funções com Parâmetros e sem retorno (procedure):
+
+* `let x = 2`
+* `let y = 1`
+* `let frase = "Só sei, que nada sei..."`
+
+<br>
+
+* `function somar(num1, num2) {`
+
+      document.write(num1 + num2)
+  `}`
+
+#### Funções com Parâmetros e com retorno (function):
+
+* `function somar2(n1, n2) {`
+
+      return n1 + n2
+  `}`
+
+#### Chamada das funções:
+
+* `somar(x, y)`
+
+* `document.write(somar2(17, 5))`
+
+* ``document.write(`<p>somar2(3, 5)</p>`)``
+
+#### Função dentro de outra:
+
+* Uma função dentro da outra, pode ser colocada com nome, apenas o nome da função ou pode adicionar uma função anônima.
+
+* `function exibirSoma() {`
+
+      somar(x, y)
+  `}`
+
+* `exibirSoma()`
+
+* Função Anônima: não possui nome, pode ter parâmetros se precisar, e pode ter retorno, caso necessário.
+
+* `titulo.addEventListener('click', function () {`
+
+      alert("Clicou no Título.")
+  `})`
+
+#### Arrow Function:
+
+* Arrow Functions é uma técnica que surgiu em 2015, a partir do ES6 (EcmaScript 6).
+
+* `const fraseArrow = () => document.write("Essa é uma frase de exemplo, com Arrow Function.")`
+
+* #### Observações:
+    Não precisa usar as palavras: function e return.
+
+    Não se usa nome nesta função, porém, precisa usar variável.
+
+    Não precisa usar {} ( chaves ), caso, a Arrow Function seja usada para executar uma única instrução.
+
+    Se for usada duas instruções ou mais para ser executada pela arrow function, é obrigatório o uso de chaves.
+
+    E também, é considerada uma Função Anônima.
+
+* ``const frase2Arrow = () => `<p>Frase secundária de exemplo, com Arrow Function...</p>` ``
+
+#### Chamada da Arrow Function:
+
+* `fraseArrow()`
+
+* Quando dentro da função não é usado um método de saída, a chamada da função é declarada assim:
+
+* `document.write(frase2Arrow())`
+
+<br>
 
 ### Eventos no Javascript
 
-
+<br>
 
 ### Estruturas if else e switch case no Javascript
 
-
+<br>
 
 ### Estruturas for, forEach, while e do while no Javascript
