@@ -526,6 +526,53 @@
 
 ### Eventos no Javascript
 
+#### Evento onLoad:
+
+* Serve para executar uma função, quando a página é carregada e também, toda vez que a página é recarregada.
+
+* `onLoad = "carregou()"`
+
+#### Evento onScroll:
+
+* Serve para executar uma função, quando a barra de rolagem ( scroll ) rolar / quando for movimentada.
+
+* `onScroll = "rolandoScroll()"`
+
+#### Evento onClick:
+
+* Serve para executar uma função, quando um item é clicado.
+
+* `onClick = "clicou()"`
+
+#### Evento onMouseOver:
+
+* Executa uma função, quando o cursor do Mouse estiver sob / em cima de um item.
+
+* `onMouseOver = "itemFocado()"`
+
+#### Evento onFocus:
+
+* Executa uma função, quando o item é focado. Exemplo: quando o onFocus é usado em uma tag input, o foco é  ativado quando o usuário, clica dentro do input.
+
+* `<input type="text" placeholder="Digite aqui..." onFocus="focoNoInput()" />`
+
+#### Evento onFocusOut:
+
+* 
+
+* ``
+
+#### Evento onKeyPress:
+
+* 
+
+* ``
+
+* #### Observação:
+    
+
+#### Usando eventos no Javascript:
+
 <br>
 
 ### Estruturas if else e switch case no Javascript
