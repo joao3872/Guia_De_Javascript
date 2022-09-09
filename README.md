@@ -360,6 +360,8 @@
 
 * `let testeClass = document.getElementsByClassName('box')`
 
+<br>
+
 ### DOM Manipular CSS com Javascript
 
 #### Inserir uma imagem com setAttribute():
@@ -417,6 +419,8 @@
 * .classList.add("nomeDaClass"), adiciona uma class na lista de classes e aplica todas as alterações que a class CSS possui.
 
 * .classList.remove("nomeDaClass"), remove a class da lista de classes e retira todas as alterações que a class CSS estava aplicando.
+
+<br>
 
 ### Funções em Javascript, e Arrow Function
 
@@ -517,6 +521,17 @@
 * Quando dentro da função não é usado um método de saída, a chamada da função é declarada assim:
 
 * `document.write(frase2Arrow())`
+
+#### Exemplo de Arrow Function, com { } ( chaves ):
+
+* `let frase3Arrow = () => {`
+
+      frase.style.color = 'orange'
+      frase.style.fontSize = '22px'
+      document.write(frase)
+  `}`
+
+* `frase3Arrow()`
 
 <br>
 
