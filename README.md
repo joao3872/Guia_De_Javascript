@@ -522,17 +522,6 @@
 
 * `document.write(frase2Arrow())`
 
-#### Exemplo de Arrow Function, com { } ( chaves ):
-
-* `let frase3Arrow = () => {`
-
-      frase.style.color = 'orange'
-      frase.style.fontSize = '22px'
-      document.write(frase)
-  `}`
-
-* `frase3Arrow()`
-
 <br>
 
 ### Eventos no Javascript
