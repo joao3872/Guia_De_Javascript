@@ -530,25 +530,25 @@
 
 * Serve para executar uma função, quando a página é carregada e também, toda vez que a página é recarregada.
 
-* `onLoad = "carregou()"`
+* `onLoad="carregou()"`
 
 #### Evento onScroll:
 
 * Serve para executar uma função, quando a barra de rolagem ( scroll ) rolar / quando for movimentada.
 
-* `onScroll = "rolandoScroll()"`
+* `onScroll="rolandoScroll()"`
 
 #### Evento onClick:
 
 * Serve para executar uma função, quando um item é clicado.
 
-* `onClick = "clicou()"`
+* `onClick="clicou()"`
 
 #### Evento onMouseOver:
 
 * Executa uma função, quando o cursor do Mouse estiver sob / em cima de um item.
 
-* `onMouseOver = "itemFocado()"`
+* `onMouseOver="itemFocado()"`
 
 #### Evento onFocus:
 
@@ -558,20 +558,40 @@
 
 #### Evento onFocusOut:
 
-* 
+* Executa uma função, quando o item perde o foco. Exemplo: quando o onFocusOut é utilizado em uma tag input e mesmo está focado, o foco é perdido quando o usuário clica fora do input.
 
-* ``
+* `onFocusOut="semFocoNoInput()"`
 
 #### Evento onKeyPress:
 
-* 
+* Executa uma função, quando qualquer tecla do teclado é apertada / pressionada e em seguida é solta.
 
-* ``
+* `onKeyPress="avisarQueTeclou()"`
 
 * #### Observação:
-    
+    Quando os eventos são utilizados no HTML, devem possuir a palavra on na frente do evento. E além disso, quando um evento é usado no HTML, o mesmo é executado de forma Imperativa / forçada.
 
 #### Usando eventos no Javascript:
+
+* Eventos no JS, são utilizados através do método, .addEventListener(), com este não pode colocar a palavra on na frente do evento.
+
+* `let button1 = document.querySelector('#btn1')`
+
+* `let button2 = document.querySelector('#btn2')`
+
+* `let botaoEnviar = document.querySelector('#btn3')`
+
+* `button1.addEventListener('mouseover', function () {`
+
+      console.log('Foco no botão 1.')
+  `}`
+
+* `button2.addEventListener('blur', function () {`
+
+      console.log('Botão 2 perdeu o foco.')
+  `})`
+
+* HTML para o exemplo abaixo:
 
 <br>
 
