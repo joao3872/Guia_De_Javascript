@@ -593,10 +593,230 @@
 
 * HTML para o exemplo abaixo:
 
+`<form action="">`
+
+    <input type="email" placeholder="E-mail..." class="input_email" />`
+
+    <input type="password" placeholder="Senha..." class="input_senha" />
+
+    <button type="submit" id="btn3" class="btn_enviar">Enviar</button>
+
+`</form>`
+
+* #### Observação:
+    Dentro da tag form, possui um botão do tipo submit, é justamente o submit, que faz o envio dos dados preenchidos nos itens dentro da tag form.
+    Quando as informações são submetidas, a página recarrega. Então para evitar isso, é necessário usar o método: .preventDefault(), para não fazer o envio com recarregamento da página.
+
+* `botaoEnviar.addEventListener('click', function (event) {`
+
+      event.preventDefault()
+      console.log('Clicou no Botão Enviar.')
+  `})`
+
 <br>
 
 ### Estruturas if else e switch case no Javascript
 
+* `let sit1 = document.querySelector('.sit1')`
+
+* `let sit2 = document.querySelector('#sit2')`
+
+* `let sit3 = document.querySelector('.sit3')`
+
+* `let escolha = document.querySelector('#escolha')`
+
+* `let notaFinal1 = 3`
+
+* `let notaFinal2 = 8`
+
+* `let notaFinal3 = 5`
+
+#### Estruturas Condicionais:
+
+* IF ( se )
+
+* Neste caso, se a condição for complida a ação entre { }, será realizada. Agora, se a condição não for satisfeita, com apenas o if, não vai realizar nenhuma ação.
+
+* `if (notaFinal1 >= 7) {`
+
+      sit1.textContent = 'Aprovado !'
+  `}`
+
+* Usar apenas o if, é bom quando você quer executar um único tipo de ação, somente naquela vez.
+
+#### IF ( se ) e ELSE ( senão ):
+
+* Essa é uma Condicional Composta. Serve para verificar uma condição e fazer o seguinte: se a condição for satisfeita, será executado a ação dentro do bloco do IF, caso a condição não seja satisfeita vai executar outra ação.
+
+* `if (notaFinal1 >= 7) {`
+
+      sit1.textContent = 'Aprovado(a)'
+  `} else {`
+
+      sit1.textContent = 'Reprovado(a)'
+  `}`
+
+#### IF Ternário:
+
+* O que vem antes do ponto de interrogação, é a condição.
+* O ponto de interrogação ( ? ) significa: então.
+* Dois pontos ( : ) significa: senão.
+
+* `notaFinal2 >= 7 ? sit2.textContent = 'Passou' : sit2.textContent = 'Ficou'`
+
+* Se no IF Ternário, a condição for satisfeita será executada a ação que está entre ( ? ) e ( : ), se não for satisfeita vai executar o que vem depois de ( : ).
+
+#### IF Encadeado ou Aninhado:
+
+* Neste caso, podem ser feitas muitas verificações.
+
+* `if (notaFinal3 >= 7) {`
+
+      sit3.textContent = 'Aprovado'
+  `} else if (notaFinal3 <= 3) {`
+
+      sit3.textContent = 'Reprovado'
+  `} else {`
+
+      sit3.textContent = 'Recuperação'
+  `}`
+
+* Se a condição não for satisfeita no if, a condição passa a ser verificada no else if.
+* Se no else if, a condição não for satisfeita, executa o que está no else.
+* A condição que for satisfeita, irá executar a sua respectiva ação.
+
+#### Switch Case:
+
+* #### Observações:
+  * switch case é uma estrutura de Decisão.
+
+  * switch significa: escolha e o case significa: caso.
+
+  * Executa uma ação de acordo com o valor da variável.
+
+  * Verifica se o valor desta variável, é igual ao valor especificado no case, se essa verificação for verdadeira, vai executar uma ação.
+
+  * É usado o break para parar, depois de um case ser executado, se não utilizar o break, todos os casos serão executados de uma vez.
+
+  * E por fim, se nenhum caso for satisfeito, será executado o que estiver no default.
+
+
+* Executa o default:
+
+* `let situacao = ''`
+
+* `let situacao = 'Aprovado'`
+
+* Executa case 'Aprovado'.
+
+* `let situacao = 'Reprovado'`
+
+* Executa case 'Reprovado'.
+
+* `let situacao = 'Recuperação'`
+
+* Executa case 'Recuperação'.
+
+* `switch (situacao) {`
+
+      case 'Aprovado':
+          escolha.textContent = 'Passou de ano !'
+          break
+      case 'Reprovado':
+          escolha.textContent = 'Não passou de ano.'
+          break
+      case 'Recuperação':
+          escolha.textContent = 'Ainda tem uma chance.'
+          break
+      default:
+          escolha.textContent = 'Estude.'
+  `}`
+
 <br>
 
 ### Estruturas for, forEach, while e do while no Javascript
+
+* `let carros = ['Camaro', 'Onix', 'S10']`
+
+#### Estrutura de Repetição For ( para ):
+
+* Normalmente a variável usada no for, é a letra ( i ), que significa: interador, interação ou index.
+
+* O for é formado por: Variável de interação, Condição e Incremento ou Decremento.
+
+* O incremento, faz a contagem dos itens de 1 em 1 em ordem crescente.
+
+* E o decremento, faz a contagem em ordem decrescente.
+
+* `for (let i = 1; i <= 5; i++) {`
+
+      document.write(i + " ")
+  `}`
+
+* For com decremento:
+
+* `for (let i = 5; i >= 0; i--) {`
+
+      document.write(i + " ")
+  `}`
+
+#### Varrendo um array com FOR:
+
+* Enquanto a variável de interação for menor ou igual ao tamanho da lista, conte mais um.
+
+* `for (let i = 0; i <= carros.length; i++) {`
+
+      document.write(`<li>${carros[i]}</li>`)
+  `}`
+
+#### forEach ( para cada ):
+
+* forEach é um método / função de array.
+
+* `let frutas = ['Pera', 'Uva', 'Maçã', 'Banana', 'Melancia']`
+
+* Os parâmetros do forEach: elementos do array e índice.
+
+* `frutas.forEach(function (fruta, i) {`
+
+      document.write(`${i} ${fruta} <br>`)
+  `})`
+
+* Não é obrigatório o uso de dois parâmetros, você pode usar só um também.
+
+* `carros.forEach(function (carro) {`
+
+      document.write(`${carro} <br>`)
+  `})`
+
+#### Estrutura de Repetição WHILE ( enquanto ):
+
+* É necessário criar variável de contador fora do laço.
+
+* `let contador = 0`
+
+* `while (contador < frutas.length) {`
+
+      document.write(`${frutas[contador]} <br>`)
+      contador++   // contador + 1
+  `}`
+
+#### Estrutura DO WHILE ( faça enquanto ):
+
+* do while, executa a ação pelo menos uma vez, mesmo antes da verificação do while ser feita.
+
+* `let iterador = 0   // variável de contador.`
+
+* `do {`
+
+      document.write(`${carros[iterador]} <br>`)
+      iterador++   // iterador + 1
+  `} while (iterador < carros.length)`
+
+<br>
+
+### Créditos:
+
+* #### Este conteúdo, foi baseado nas aulas do curso de Javascript do <a href="https://m.youtube.com/c/ProfessorEdsonMaia" target="_blank">Professor Edson Maia</a>, no YouTube.
+
+* #### <a href="https://youtube.com/playlist?list=PLnex8IkmReXxZEXje06kW1uCwm5iC8M_Z" target="_blank">Link do Curso</a>
